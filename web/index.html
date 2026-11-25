@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document assistant demo · Hollvik (fictional)</title>
+  <meta name="description" content="Ask questions about a heat pump manufacturer's manuals, price list and warranty terms. Every answer cites the page it comes from.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top-row">
+      <div class="brand">HOLLVIK <span>Wärmetechnik</span></div>
+      <div class="tag">Document assistant · demo</div>
+    </div>
+  </header>
+
+  <main class="wrap layout">
+    <section class="ask" aria-labelledby="ask-title">
+      <h1 id="ask-title">Ask the service documents</h1>
+      <p class="lead">Answers come only from the six documents on this page: datasheet, installation manual, warranty terms, service price list, customer FAQ and an internal service guideline. Each answer links to the page it used. Ask in English, German or Turkish.</p>
+
+      <form id="form" autocomplete="off">
+        <label for="question" class="visually-hidden">Your question</label>
+        <textarea id="question" name="question" rows="2" maxlength="500" placeholder="e.g. How loud is the LW 12 at night?" required></textarea>
+        <div class="form-row">
+          <span id="count" class="count">0 / 500</span>
+          <button type="submit" id="submit">Ask</button>
+        </div>
+      </form>
+
+      <div class="examples" aria-label="Example questions">
+        <button type="button" class="example">How long is the compressor warranty and what do I need to do for it?</button>
+        <button type="button" class="example">Was bedeutet der Störungscode E12?</button>
+        <button type="button" class="example">LW 9'un yıllık bakımı ne kadar tutuyor?</button>
+        <button type="button" class="example">Can the LW 6 cool my house in summer?</button>
+        <button type="button" class="example">Who is the managing director of Hollvik?</button>
+      </div>
+
+      <div id="status" class="status" role="status" aria-live="polite"></div>
+      <article id="answer" class="answer" aria-live="polite" hidden></article>
+      <ol id="sources" class="sources" hidden></ol>
+    </section>
+
+    <aside class="docs" aria-labelledby="docs-title">
+      <h2 id="docs-title">Documents</h2>
+      <ul id="documents" class="doc-list"><li class="muted">Loading the list…</li></ul>
+      <h2>How it works</h2>
+      <p>The documents are split into passages and indexed once. For each question the most similar passages are found by meaning (so an English question also finds a German page), error codes are matched exactly, and the language model may answer only from those passages, with a citation after each fact. If the documents do not contain the answer, it says so.</p>
+      <p><a href="https://github.com/KeremCanArslan/docs-assistant">Source code, tests and evaluation on GitHub</a></p>
+    </aside>
+  </main>
+
+  <footer class="wrap foot">
+    Hollvik Wärmetechnik GmbH and all documents are fictional, created for this demo. Questions are sent to the language model providers (Groq, Google) to produce the answer and are not stored by this demo; please do not enter personal data. Free hosting: the first question after a quiet period can take up to a minute.
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

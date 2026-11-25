@@ -1,0 +1,20 @@
+@page { size: A4; margin: 18mm 16mm 20mm 16mm; }
+* { box-sizing: border-box; }
+body { font-family: "Helvetica Neue", Arial, sans-serif; font-size: 10.5pt; line-height: 1.45; color: #1d1d1b; margin: 0; }
+header.doc { border-bottom: 2.5pt solid #b5361d; padding-bottom: 8pt; margin-bottom: 14pt; display: flex; justify-content: space-between; align-items: flex-end; }
+header.doc .brand { font-size: 17pt; font-weight: 700; letter-spacing: 0.5pt; }
+header.doc .brand span { color: #b5361d; }
+header.doc .meta { font-size: 8.5pt; color: #555; text-align: right; }
+h1 { font-size: 16pt; margin: 0 0 6pt; }
+h2 { font-size: 12pt; margin: 16pt 0 6pt; border-bottom: 0.5pt solid #bbb; padding-bottom: 2pt; break-after: avoid; }
+h3 { font-size: 10.5pt; margin: 10pt 0 4pt; break-after: avoid; }
+p { margin: 0 0 6pt; }
+ul, ol { margin: 0 0 6pt 16pt; padding: 0; }
+li { margin-bottom: 2pt; }
+table { border-collapse: collapse; width: 100%; margin: 6pt 0 10pt; font-size: 9.5pt; break-inside: avoid; }
+th, td { border: 0.5pt solid #999; padding: 3pt 5pt; text-align: left; vertical-align: top; }
+th { background: #eee; }
+td.num, th.num { text-align: right; }
+.note { border-left: 2pt solid #b5361d; padding: 4pt 8pt; background: #f6f3f1; margin: 8pt 0; }
+.fictional { font-size: 8pt; color: #666; border-top: 0.5pt solid #bbb; margin-top: 10pt; padding-top: 4pt; break-inside: avoid; }
+.pagebreak { break-before: page; }

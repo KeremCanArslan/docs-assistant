@@ -1,0 +1,14 @@
+{
+ "embedder": "gemini/gemini-embedding-001/768",
+ "dimension": 768,
+ "chunks": 54,
+ "documents": {
+  "customer-faq-en.md": "0f2e1d56245d6cad145c56cb60f7e3cb9b62501febdb2f5d052c4a4c1760bec7",
+  "datasheet-lw-series-en.pdf": "748e5cb96081bc653c40c3dc5cba3b99a7d3e3638425a64354cdf62d375ff939",
+  "installationsanleitung-lw-de.pdf": "f3af6f99aa282aaf8897dc4d3fb5ef58a1de3286fe49b6901b572ca3c200c261",
+  "serviceanweisung-sa07-de.docx": "2cf8e5ba72632287209deb77f24b6275377b8840a0a67d6988e3f22e9fedbeee",
+  "servicepreisliste-2026-de.pdf": "34d4b74763c2040829ad1ba40122a6a7d2e63bb49ecc3122e9129785cb3454a0",
+  "warranty-terms-en.pdf": "77186665a686d5ff81700673415a8af49debc57b372d2becae42a81e6d3295e1"
+ },
+ "built_at": "2026-11-25T14:39:01+00:00"
+}

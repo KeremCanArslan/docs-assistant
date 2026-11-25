@@ -1,0 +1,434 @@
+[
+ {
+  "id": "customer-faq-en.md#0",
+  "doc_id": "customer-faq-en.md",
+  "title": "Hollvik heat pumps: frequently asked questions",
+  "text": "Customer FAQ, version 2026-04. For technical details see datasheet TD-LW-2026-03 and installation manual IA-LW-2026-02.",
+  "page": null,
+  "heading": null
+ },
+ {
+  "id": "customer-faq-en.md#1",
+  "doc_id": "customer-faq-en.md",
+  "title": "Hollvik heat pumps: frequently asked questions",
+  "text": "The LW series has a night mode that is active from 22:00 to 06:00 by default. In night mode the sound pressure at 3 m distance is 30 dB(A) for the LW 6, 32 dB(A) for the LW 9 and 34 dB(A) for the LW 12. You can change the night mode time window in the Hollvik Home app.",
+  "page": null,
+  "heading": "Is the heat pump loud at night?"
+ },
+ {
+  "id": "customer-faq-en.md#2",
+  "doc_id": "customer-faq-en.md",
+  "title": "Hollvik heat pumps: frequently asked questions",
+  "text": "Yes. All LW models heat down to an outdoor temperature of -25 °C. Below -10 °C the maximum flow temperature is 60 °C. On very cold days the built-in backup heater can support the heat pump.",
+  "page": null,
+  "heading": "Does it work in very cold weather?"
+ },
+ {
+  "id": "customer-faq-en.md#3",
+  "doc_id": "customer-faq-en.md",
+  "title": "Hollvik heat pumps: frequently asked questions",
+  "text": "This is the defrost cycle. In cold and humid weather ice forms on the evaporator. The heat pump melts the ice for a few minutes and the warm water vapour can look like steam. This is normal and not a fault. If the display shows E07, the defrost failed; check that the condensate drain is not frozen.",
+  "page": null,
+  "heading": "Why does the outdoor unit produce steam or stop for a few minutes?"
+ },
+ {
+  "id": "customer-faq-en.md#4",
+  "doc_id": "customer-faq-en.md",
+  "title": "Hollvik heat pumps: frequently asked questions",
+  "text": "The LW 9 and LW 12 can cool through underfloor heating or fan coils. The LW 6 cannot cool. With underfloor cooling the flow temperature does not go below 18 °C to avoid condensation on the floor.",
+  "page": null,
+  "heading": "Can the heat pump cool my house in summer?"
+ },
+ {
+  "id": "customer-faq-en.md#5",
+  "doc_id": "customer-faq-en.md",
+  "title": "Hollvik heat pumps: frequently asked questions",
+  "text": "Install the app, create an account and select \"Add device\". Your phone and the HC-2 control unit must be in the same Wi-Fi network. The HC-2 only supports 2.4 GHz Wi-Fi; if your router uses a combined 2.4/5 GHz network name, enable a separate 2.4 GHz network for the setup.",
+  "page": null,
+  "heading": "How do I connect the Hollvik Home app?"
+ },
+ {
+  "id": "customer-faq-en.md#6",
+  "doc_id": "customer-faq-en.md",
+  "title": "Hollvik heat pumps: frequently asked questions",
+  "text": "The heat pump restarts automatically when the power returns. All settings are kept. If your installer did not install frost protection valves or antifreeze, a long power cut in winter can damage the outdoor unit. Ask your installer how your system is protected.",
+  "page": null,
+  "heading": "What happens during a power cut?"
+ },
+ {
+  "id": "customer-faq-en.md#7",
+  "doc_id": "customer-faq-en.md",
+  "title": "Hollvik heat pumps: frequently asked questions",
+  "text": "Yes. The LW series has an SG Ready input. When your PV system or energy manager signals surplus power, the heat pump raises the hot water and room temperature slightly to store the energy.",
+  "page": null,
+  "heading": "Can I use electricity from my solar panels?"
+ },
+ {
+  "id": "customer-faq-en.md#8",
+  "doc_id": "customer-faq-en.md",
+  "title": "Hollvik heat pumps: frequently asked questions",
+  "text": "Once a year, by Hollvik service or a certified Hollvik partner. Annual maintenance is also a condition for the 10-year compressor warranty. You can book an appointment online at www.hollvik.example/service or call the service hotline from Monday to Friday, 8:00 to 17:00.",
+  "page": null,
+  "heading": "How often does the heat pump need maintenance?"
+ },
+ {
+  "id": "customer-faq-en.md#9",
+  "doc_id": "customer-faq-en.md",
+  "title": "Hollvik heat pumps: frequently asked questions",
+  "text": "Note the code and look it up in the error table of the installation manual. Some codes, for example E03 (water flow too low) and E05 (communication error), may be reset once by the owner. If the same code appears again within 24 hours, or if the code cannot be reset by the owner, contact your installer or Hollvik service.",
+  "page": null,
+  "heading": "What should I do when an error code appears?"
+ },
+ {
+  "id": "customer-faq-en.md#10",
+  "doc_id": "customer-faq-en.md",
+  "title": "Hollvik heat pumps: frequently asked questions",
+  "text": "Contact your installer or Hollvik service at service@hollvik.example. Have the serial number from the type plate and your commissioning protocol ready. Hollvik answers within 2 working days.\nFictional document created for a software demonstration. Hollvik Wärmetechnik GmbH, its products and all information in this document are invented.",
+  "page": null,
+  "heading": "Who do I contact for a warranty claim?"
+ },
+ {
+  "id": "datasheet-lw-series-en.pdf#0",
+  "doc_id": "datasheet-lw-series-en.pdf",
+  "title": "Hollvik LW series - technical datasheet",
+  "text": "Technical datasheet TD-LW-2026-03\nHOLLVIK Wärmetechnik | Valid from 1 March 2026\nHollvik LW 6 / LW 9 / LW 12 air-to-water heat pumps\nThe LW series are monobloc air-to-water heat pumps for outdoor installation. They heat buildings and\ndomestic hot water and use the natural refrigerant R290 (propane). All refrigerant-carrying parts are inside\nthe outdoor unit, so no refrigerant work is needed on site. The indoor control unit HC-2 is included with\nevery heat pump.",
+  "page": 1,
+  "heading": null
+ },
+ {
+  "id": "datasheet-lw-series-en.pdf#1",
+  "doc_id": "datasheet-lw-series-en.pdf",
+  "title": "Hollvik LW series - technical datasheet",
+  "text": "1. Performance data\nValues measured according to EN 14511. A = outdoor air temperature, W = flow water temperature, in °C.\nModel LW 6 LW 9 LW 12\nHeating capacity A7/W35 | 6.1 kW | 8.8 kW | 12.2 kW\nCOP A7/W35 | 5.0 | 4.9 | 4.8\nHeating capacity A-7/W35 | 5.2 kW | 7.4 kW | 10.1 kW\nCOP A-7/W35 | 3.1 | 3.0 | 2.9\nHeating capacity A2/W55 | 5.4 kW | 7.9 kW | 10.8 kW\nCOP A2/W55 | 2.8 | 2.8 | 2.7\nSCOP, average climate, 35 °C | 4.9 | 4.8 | 4.7\nSCOP, average climate, 55 °C | 3.6 | 3.6 | 3.5\nEnergy efficiency class, 35 °C / 55 °C | A+++ / A++ | A+++ / A++ | A+++ / A++\nCooling capacity A35/W18 | not available | 7.6 kW | 10.4 kW",
+  "page": 1,
+  "heading": "1. Performance data"
+ },
+ {
+  "id": "datasheet-lw-series-en.pdf#2",
+  "doc_id": "datasheet-lw-series-en.pdf",
+  "title": "Hollvik LW series - technical datasheet",
+  "text": "2. Operating limits\nParameter Value (all models)\nOutdoor temperature, heating | -25 °C to +35 °C\nOutdoor temperature, hot water | -25 °C to +40 °C\nMaximum flow temperature | 70 °C (at outdoor temperatures above -10 °C), 60 °C below\n-10 °C\nMinimum flow temperature, cooling (LW 9 and LW 12 | 18 °C with underfloor cooling, 7 °C with fan coils\nonly)\nBackup electric heater | Built in, 3 / 6 / 9 kW in three stages",
+  "page": 1,
+  "heading": "2. Operating limits"
+ },
+ {
+  "id": "datasheet-lw-series-en.pdf#3",
+  "doc_id": "datasheet-lw-series-en.pdf",
+  "title": "Hollvik LW series - technical datasheet",
+  "text": "3. Sound\nModel LW 6 LW 9 LW 12\nSound power level (ErP, A7/W55) | 52 dB(A) | 54 dB(A) | 56 dB(A)\nSound pressure at 3 m, free field, normal mode | 35 dB(A) | 37 dB(A) | 39 dB(A)\nSound pressure at 3 m, free field, night mode | 30 dB(A) | 32 dB(A) | 34 dB(A)\nNight mode limits the compressor and fan speed between 22:00 and 06:00 by default. The time window\ncan be changed in the HC-2 control unit or in the Hollvik Home app. In night mode the heating capacity is\nreduced by up to 25 %.",
+  "page": 2,
+  "heading": "3. Sound"
+ },
+ {
+  "id": "datasheet-lw-series-en.pdf#4",
+  "doc_id": "datasheet-lw-series-en.pdf",
+  "title": "Hollvik LW series - technical datasheet",
+  "text": "4. Refrigerant circuit\nModel LW 6 LW 9 LW 12\nRefrigerant | R290 | R290 | R290\nRefrigerant charge | 0.9 kg | 1.3 kg | 1.6 kg\nGlobal warming potential (GWP) | 3 | 3 | 3\nCompressor type | Inverter rotary | Inverter twin-rotary | Inverter scroll",
+  "page": 2,
+  "heading": "4. Refrigerant circuit"
+ },
+ {
+  "id": "datasheet-lw-series-en.pdf#5",
+  "doc_id": "datasheet-lw-series-en.pdf",
+  "title": "Hollvik LW series - technical datasheet",
+  "text": "5. Electrical data\nModel LW 6 LW 9 LW 12\nPower supply | 230 V, 1-phase, 50 | 230 V, 1-phase, 50 | 400 V, 3-phase, 50\nHz Hz Hz\nMaximum power input (compressor) | 2.9 kW | 3.8 kW | 5.2 kW\nRecommended circuit breaker, compressor | C16 A | C20 A | 3 x C16 A\nRecommended circuit breaker, backup | 3 x B16 A | 3 x B16 A | 3 x B16 A\nheater\nResidual current device | Type A, 30 mA, separate for compressor and backup heater\nSmart grid input | SG Ready (two potential-free contacts) for photovoltaic surplus",
+  "page": 2,
+  "heading": "5. Electrical data"
+ },
+ {
+  "id": "datasheet-lw-series-en.pdf#6",
+  "doc_id": "datasheet-lw-series-en.pdf",
+  "title": "Hollvik LW series - technical datasheet",
+  "text": "6. Dimensions and weight\nModel LW 6 LW 9 LW 12\nWidth x height x depth | 1100 x 800 x 450 mm | 1250 x 950 x 480 mm | 1250 x 1350 x 480 mm\nWeight (empty) | 98 kg | 124 kg | 162 kg\nWater connections | G 1\" male | G 1\" male | G 1 1/4\" male\nMinimum water flow | 850 l/h | 1250 l/h | 1700 l/h\nMinimum system water volume | 30 l | 45 l | 60 l",
+  "page": 2,
+  "heading": "6. Dimensions and weight"
+ },
+ {
+  "id": "datasheet-lw-series-en.pdf#7",
+  "doc_id": "datasheet-lw-series-en.pdf",
+  "title": "Hollvik LW series - technical datasheet",
+  "text": "7. Connectivity\nHollvik Home app for Android and iOS. The HC-2 control unit connects through Wi-Fi in the 2.4 GHz\nband only; 5 GHz networks are not supported.\nModbus TCP interface for building management systems (register list on request).\nFirmware updates are installed over the air when the unit is online. The installer can disable automatic\nupdates.\nChoose the model by the heat load of the building, not by the floor area. Your installer calculates the\nheat load before ordering.\nFictional document created for a software demonstration. Hollvik Wärmetechnik GmbH, its products and all values in this document are\ninvented and do not describe any real company or product.",
+  "page": 3,
+  "heading": "7. Connectivity"
+ },
+ {
+  "id": "installationsanleitung-lw-de.pdf#0",
+  "doc_id": "installationsanleitung-lw-de.pdf",
+  "title": "Hollvik LW - Installations- und Inbetriebnahmeanleitung",
+  "text": "Installationsanleitung IA-LW-2026-02\nHOLLVIK Wärmetechnik | für LW 6, LW 9, LW 12\nInstallation und Inbetriebnahme der Luft-Wasser-Wärmepumpen LW 6, LW 9 und LW 12\nDiese Anleitung richtet sich an Fachbetriebe. Die Installation, der elektrische Anschluss und die\nInbetriebnahme dürfen nur von qualifiziertem Fachpersonal durchgeführt werden. Lesen Sie die Anleitung\nvollständig, bevor Sie mit der Arbeit beginnen, und übergeben Sie sie nach der Inbetriebnahme dem\nBetreiber.",
+  "page": 1,
+  "heading": null
+ },
+ {
+  "id": "installationsanleitung-lw-de.pdf#1",
+  "doc_id": "installationsanleitung-lw-de.pdf",
+  "title": "Hollvik LW - Installations- und Inbetriebnahmeanleitung",
+  "text": "1. Sicherheitshinweise\nDas Gerät enthält das brennbare Kältemittel R290 (Propan). Im Schutzbereich von 1 m rund um das\nAußengerät dürfen sich keine Zündquellen befinden, zum Beispiel Steckdosen, Lichtschalter, Lampen\noder Grills.\nIm Schutzbereich dürfen keine Kellerfenster, Lichtschächte, Abflüsse oder Gebäudeöffnungen liegen, in\ndenen sich Propan sammeln könnte.\nArbeiten am Kältekreis dürfen nur Techniker mit gültiger Kältemittel-Sachkunde und abgeschlossener\nHollvik-R290-Schulung ausführen.\nVor allen Arbeiten am Gerät beide Stromkreise (Verdichter und Heizstab) allpolig abschalten und gegen\nWiedereinschalten sichern. Nach dem Abschalten mindestens 5 Minuten warten, bis die Kondensatoren\ndes Inverters entladen sind.",
+  "page": 1,
+  "heading": "1. Sicherheitshinweise"
+ },
+ {
+  "id": "installationsanleitung-lw-de.pdf#2",
+  "doc_id": "installationsanleitung-lw-de.pdf",
+  "title": "Hollvik LW - Installations- und Inbetriebnahmeanleitung",
+  "text": "2. Lieferumfang und Transport\nAußengerät, Regelungseinheit HC-2 mit Wandhalter, Außentemperaturfühler, Schmutzfänger mit\nMagnetit-Abscheider, vier Schwingungsdämpfer, diese Anleitung.\nDas Außengerät nur stehend transportieren. Eine Neigung von mehr als 45° ist nicht zulässig. Wurde\ndas Gerät liegend transportiert, muss es vor dem Einschalten mindestens 2 Stunden aufrecht stehen.",
+  "page": 1,
+  "heading": "2. Lieferumfang und Transport"
+ },
+ {
+  "id": "installationsanleitung-lw-de.pdf#3",
+  "doc_id": "installationsanleitung-lw-de.pdf",
+  "title": "Hollvik LW - Installations- und Inbetriebnahmeanleitung",
+  "text": "3. Aufstellort / 3.1 Mindestabstände\nSeite Mindestabstand\nVorderseite (Luftaustritt) | 1,5 m\nRückseite (Lufteintritt) zur Wand | 0,3 m\nLinke und rechte Seite | 0,5 m\nOberseite 1,0 m\nAbstand zwischen zwei Geräten (Kaskade) | 1,0 m\nDas Gerät nicht in einer Wandnische, unter einem geschlossenen Carport oder in einer Ecke mit Wänden\nauf drei Seiten aufstellen. Der Luftaustritt darf nicht auf Fenster von Schlafräumen, Terrassen oder das\nNachbargrundstück gerichtet sein. Die örtlichen Vorschriften zum Schallschutz sind einzuhalten.",
+  "page": 1,
+  "heading": "3. Aufstellort / 3.1 Mindestabstände"
+ },
+ {
+  "id": "installationsanleitung-lw-de.pdf#4",
+  "doc_id": "installationsanleitung-lw-de.pdf",
+  "title": "Hollvik LW - Installations- und Inbetriebnahmeanleitung",
+  "text": "3.2 Fundament und Kondensat\nStreifenfundament aus Beton oder Bodenkonsole von Hollvik. Die Unterkante des Geräts muss\nmindestens 300 mm über dem Boden liegen, damit Schnee den Lufteintritt nicht blockiert.\nBeim Abtauen fallen bis zu 5 Liter Kondensat pro Stunde an. Das Kondensat frostfrei ableiten: Kiesbett\nmit mindestens 800 mm Tiefe oder Anschluss an die Kanalisation über einen frostgeschützten Siphon.\nKondensatleitungen im Freien mit einem selbstregelnden Begleitheizband versehen.",
+  "page": 2,
+  "heading": "3.2 Fundament und Kondensat"
+ },
+ {
+  "id": "installationsanleitung-lw-de.pdf#5",
+  "doc_id": "installationsanleitung-lw-de.pdf",
+  "title": "Hollvik LW - Installations- und Inbetriebnahmeanleitung",
+  "text": "4. Hydraulischer Anschluss\nVor dem Anschluss das Heizsystem gründlich spülen. Der mitgelieferte Schmutzfänger mit Magnetit-\nAbscheider muss im Rücklauf vor der Wärmepumpe eingebaut werden. Ohne Schmutzfänger erlischt\ndie Garantie auf den Plattenwärmeübertrager.\nMindestwasservolumen der Anlage: LW 6 30 Liter, LW 9 45 Liter, LW 12 60 Liter. Wird dieses Volumen\nnicht erreicht oder sind Heizkreise mit Thermostatventilen ausgestattet, ist ein Pufferspeicher\neinzubauen.\nWasserqualität: pH-Wert 8,2 bis 10, Gesamthärte maximal 11,2 °dH (2,0 mmol/l). Füllwasser bei Bedarf\nenthärten oder entsalzen.\nDie Vor- und Rücklaufleitungen im Freien müssen mit mindestens 19 mm diffusionsdichter Dämmung\nisoliert werden.\nBei Anlagen ohne Frostschutzmittel muss ein Stromausfall in der Frostperiode berücksichtigt werden.",
+  "page": 2,
+  "heading": "4. Hydraulischer Anschluss"
+ },
+ {
+  "id": "installationsanleitung-lw-de.pdf#6",
+  "doc_id": "installationsanleitung-lw-de.pdf",
+  "title": "Hollvik LW - Installations- und Inbetriebnahmeanleitung",
+  "text": "isoliert werden.\nBei Anlagen ohne Frostschutzmittel muss ein Stromausfall in der Frostperiode berücksichtigt werden.\nHollvik empfiehlt Frostschutzventile am Außengerät (Zubehör FS-1). Alternativ kann das System mit\nPropylenglykol bis 25 % befüllt werden; die Heizleistung sinkt dabei um etwa 5 %.",
+  "page": 2,
+  "heading": "4. Hydraulischer Anschluss"
+ },
+ {
+  "id": "installationsanleitung-lw-de.pdf#7",
+  "doc_id": "installationsanleitung-lw-de.pdf",
+  "title": "Hollvik LW - Installations- und Inbetriebnahmeanleitung",
+  "text": "5. Elektrischer Anschluss\nVerdichter und Heizstab werden über getrennte Stromkreise angeschlossen. Absicherung siehe\ntechnisches Datenblatt TD-LW-2026-03.\nFür jeden Stromkreis einen eigenen Fehlerstromschutzschalter Typ A, 30 mA, vorsehen.\nLeitungsquerschnitt für die Zuleitung des Verdichters: mindestens 2,5 mm2 bei LW 6 und LW 9,\nmindestens 5 x 2,5 mm2 bei LW 12. Bei Leitungslängen über 25 m den Querschnitt nach Spannungsfall\nneu berechnen.\nDie Busleitung zwischen Außengerät und HC-2 ist eine geschirmte, verdrillte Zweidrahtleitung (zum\nBeispiel J-Y(St)Y 2x2x0,8) und darf maximal 50 m lang sein. Nicht zusammen mit Netzleitungen im\nselben Rohr verlegen.\nEine Sperrzeit des Energieversorgers wird am Eingang EVU der HC-2 angeschlossen.",
+  "page": 2,
+  "heading": "5. Elektrischer Anschluss"
+ },
+ {
+  "id": "installationsanleitung-lw-de.pdf#8",
+  "doc_id": "installationsanleitung-lw-de.pdf",
+  "title": "Hollvik LW - Installations- und Inbetriebnahmeanleitung",
+  "text": "6. Inbetriebnahme\n1. Heizsystem füllen, spülen und vollständig entlüften.\n2. Anlagendruck im kalten Zustand auf 1,5 bar einstellen (maximal 2,5 bar im Betrieb).\n3. Dichtheit aller hydraulischen Verbindungen prüfen.\n4. Stromversorgung einschalten. Die HC-2 startet den Einrichtungsassistenten.\n5. Im Assistenten Modell, Heizkreise, Heizkurve und gegebenenfalls Pufferspeicher auswählen.\n6. Die Funktion \"Entlüftung\" für 20 Minuten ausführen.\n7. Testlauf: Heizbetrieb für mindestens 30 Minuten. Spreizung zwischen Vor- und Rücklauf prüfen; sie soll\nzwischen 4 und 7 K liegen.",
+  "page": 2,
+  "heading": "6. Inbetriebnahme"
+ },
+ {
+  "id": "installationsanleitung-lw-de.pdf#9",
+  "doc_id": "installationsanleitung-lw-de.pdf",
+  "title": "Hollvik LW - Installations- und Inbetriebnahmeanleitung",
+  "text": "8. Inbetriebnahmeprotokoll vollständig ausfüllen und vom Betreiber unterschreiben lassen.\n9. Gerät im Hollvik-Partnerportal registrieren. Die Registrierung muss innerhalb von 60 Tagen nach der\nInbetriebnahme erfolgen, damit die verlängerte Verdichtergarantie gilt.\n10. Den Betreiber in die Bedienung einweisen und auf die jährliche Wartung hinweisen.",
+  "page": 3,
+  "heading": "6. Inbetriebnahme"
+ },
+ {
+  "id": "installationsanleitung-lw-de.pdf#10",
+  "doc_id": "installationsanleitung-lw-de.pdf",
+  "title": "Hollvik LW - Installations- und Inbetriebnahmeanleitung",
+  "text": "7. Störungscodes\nStörungen werden an der HC-2 und in der Hollvik Home App angezeigt. Codes mit \"Ja\" in der Spalte\n\"Reset durch Betreiber\" darf der Betreiber einmal selbst zurücksetzen. Tritt derselbe Code innerhalb von 24\nStunden erneut auf, muss der Fachbetrieb informiert werden.\nCode Bedeutung Mögliche Ursache und Maßnahme Reset durch Betreiber\nE01 | Hochdruckstörung | Zu geringer Durchfluss, Luft im System, Schmutzfänger | Nein\nverstopft. Durchfluss und Schmutzfänger prüfen.\nE02 | Niederdruckstörung | Verdampfer vereist oder Kältemittelverlust. Fachbetrieb | Nein\nrufen.\nE03 | Durchfluss zu gering | Schmutzfänger verstopft, Ventile geschlossen, Pumpe | Ja\nblockiert. Schmutzfänger reinigen und Ventile prüfen.\nE04 | Außentemperaturfühler | Fühler oder Leitung beschädigt. Gerät läuft mit Ersatzwert 0 | Nein\ndefekt | °C weiter.",
+  "page": 3,
+  "heading": "7. Störungscodes"
+ },
+ {
+  "id": "installationsanleitung-lw-de.pdf#11",
+  "doc_id": "installationsanleitung-lw-de.pdf",
+  "title": "Hollvik LW - Installations- und Inbetriebnahmeanleitung",
+  "text": "E04 | Außentemperaturfühler | Fühler oder Leitung beschädigt. Gerät läuft mit Ersatzwert 0 | Nein\ndefekt | °C weiter.\nE05 | Kommunikationsfehler | Busleitung unterbrochen oder zu lang. Leitung und | Ja\nHC-2 | Klemmen prüfen.\nE07 | Abtauung fehlgeschlagen | Kondensat friert am Gerät fest, Begleitheizung defekt. | Ja\nKondensatablauf prüfen.\nE09 | Frostschutz aktiv | Wassertemperatur unter 4 °C. Gerät heizt automatisch mit | Nein\ndem Heizstab. Kein Fehler, solange der Code nach 30 | (automatisch)\nMinuten verschwindet.\nE12 | Übertemperatur | Zu hohe Vorlauftemperatur oder Kältemittelmangel. | Nein\nVerdichter | Fachbetrieb rufen.\nE15 | Inverterfehler | Netzspannung außerhalb 207-253 V (LW 6, LW 9) bzw. 360- | Nein\n440 V (LW 12). Spannung prüfen.",
+  "page": 3,
+  "heading": "7. Störungscodes"
+ },
+ {
+  "id": "installationsanleitung-lw-de.pdf#12",
+  "doc_id": "installationsanleitung-lw-de.pdf",
+  "title": "Hollvik LW - Installations- und Inbetriebnahmeanleitung",
+  "text": "8. Wartung\nDie Wärmepumpe muss einmal jährlich von einem Fachbetrieb gewartet werden. Die Wartung ist\nVoraussetzung für die verlängerte Verdichtergarantie.\nBei jeder Wartung: Verdampfer reinigen, Kondensatablauf und Begleitheizung prüfen, Schmutzfänger\nreinigen, Anlagendruck prüfen, Fehlerspeicher auslesen, Dichtheitsprüfung des Kältekreises mit\nGaswarngerät.\nDer Betreiber sollte den Lufteintritt regelmäßig von Laub und Schnee freihalten. Den Verdampfer nicht\nmit einem Hochdruckreiniger reinigen.\nFiktives Dokument, erstellt für eine Software-Demonstration. Die Hollvik Wärmetechnik GmbH, ihre Produkte und alle Werte in diesem\nDokument sind erfunden und beschreiben kein reales Unternehmen und kein reales Produkt.",
+  "page": 3,
+  "heading": "8. Wartung"
+ },
+ {
+  "id": "serviceanweisung-sa07-de.docx#0",
+  "doc_id": "serviceanweisung-sa07-de.docx",
+  "title": "Interne Serviceanweisung SA-07: Priorisierung und Ablauf von Serviceeinsätzen",
+  "text": "Gültig ab 1. Oktober 2026. Nur für den internen Gebrauch durch Hollvik-Servicemitarbeiter und zertifizierte Partner.",
+  "page": null,
+  "heading": null
+ },
+ {
+  "id": "serviceanweisung-sa07-de.docx#1",
+  "doc_id": "serviceanweisung-sa07-de.docx",
+  "title": "Interne Serviceanweisung SA-07: Priorisierung und Ablauf von Serviceeinsätzen",
+  "text": "Diese Anweisung legt fest, wie Serviceanfragen priorisiert werden, in welcher Zeit Kunden eine Rückmeldung bekommen und wie Einsätze dokumentiert werden.",
+  "page": null,
+  "heading": "1. Zweck"
+ },
+ {
+  "id": "serviceanweisung-sa07-de.docx#2",
+  "doc_id": "serviceanweisung-sa07-de.docx",
+  "title": "Interne Serviceanweisung SA-07: Priorisierung und Ablauf von Serviceeinsätzen",
+  "text": "Priorität | Situation | Rückruf | Techniker vor Ort\nP1 | Kompletter Heizungsausfall in der Heizperiode (1. Oktober bis 30. April) | innerhalb von 2 Stunden | innerhalb von 24 Stunden, bei Hollvik Plus innerhalb von 12 Stunden\nP2 | Eingeschränkter Betrieb, zum Beispiel nur Heizstab läuft, oder Heizungsausfall außerhalb der Heizperiode | innerhalb von 4 Stunden | innerhalb von 72 Stunden\nP3 | Wartung, Fragen zur Einstellung, kosmetische Schäden | innerhalb von 1 Werktag | Termin innerhalb von 10 Werktagen\nHaushalte mit Säuglingen, pflegebedürftigen oder kranken Personen werden bei Heizungsausfall immer als P1 eingestuft, auch außerhalb der Heizperiode.",
+  "page": null,
+  "heading": "2. Prioritäten"
+ },
+ {
+  "id": "serviceanweisung-sa07-de.docx#3",
+  "doc_id": "serviceanweisung-sa07-de.docx",
+  "title": "Interne Serviceanweisung SA-07: Priorisierung und Ablauf von Serviceeinsätzen",
+  "text": "- Seriennummer und Störungscode erfragen.\n- Bei E03 und E05 den Kunden durch den einmaligen Reset führen (siehe Installationsanleitung, Kapitel 7).\n- Prüfen, ob der Heizstab den Notbetrieb übernehmen kann. Wenn ja, wird ein P1-Fall zu P2 herabgestuft, sobald der Kunde bestätigt, dass die Räume warm werden.\n- Fernzugriff über das Partnerportal nur mit ausdrücklicher Zustimmung des Kunden. Die Zustimmung im Ticket vermerken.",
+  "page": null,
+  "heading": "3. Erstdiagnose am Telefon"
+ },
+ {
+  "id": "serviceanweisung-sa07-de.docx#4",
+  "doc_id": "serviceanweisung-sa07-de.docx",
+  "title": "Interne Serviceanweisung SA-07: Priorisierung und Ablauf von Serviceeinsätzen",
+  "text": "Bei P1-Fällen, deren Reparatur voraussichtlich länger als 48 Stunden dauert (zum Beispiel wegen Ersatzteilbestellung), stellt der Service dem Kunden kostenlos bis zu zwei elektrische Heizlüfter (je 2 kW) zur Verfügung. Die Stromkosten trägt der Kunde.",
+  "page": null,
+  "heading": "4. Leihgeräte"
+ },
+ {
+  "id": "serviceanweisung-sa07-de.docx#5",
+  "doc_id": "serviceanweisung-sa07-de.docx",
+  "title": "Interne Serviceanweisung SA-07: Priorisierung und Ablauf von Serviceeinsätzen",
+  "text": "- Der Servicetechniker darf vor Ort Kulanz bis 150 Euro netto ohne Rücksprache gewähren, zum Beispiel durch Erlass der Anfahrtspauschale.\n- Kulanz über 150 Euro bis 1.000 Euro genehmigt die Teamleitung Service.\n- Kulanz über 1.000 Euro genehmigt die Leitung Kundendienst.\n- Jede Kulanz wird im Ticket mit Begründung dokumentiert.",
+  "page": null,
+  "heading": "5. Kulanz"
+ },
+ {
+  "id": "serviceanweisung-sa07-de.docx#6",
+  "doc_id": "serviceanweisung-sa07-de.docx",
+  "title": "Interne Serviceanweisung SA-07: Priorisierung und Ablauf von Serviceeinsätzen",
+  "text": "Arbeiten am Kältekreis dürfen nur Techniker mit gültiger Kältemittel-Sachkunde und abgeschlossener Hollvik-R290-Schulung ausführen. Die Schulung muss alle 3 Jahre aufgefrischt werden. Vor jedem Öffnen des Kältekreises ist die Umgebung mit einem Gaswarngerät zu prüfen.",
+  "page": null,
+  "heading": "6. Arbeiten am Kältekreis"
+ },
+ {
+  "id": "serviceanweisung-sa07-de.docx#7",
+  "doc_id": "serviceanweisung-sa07-de.docx",
+  "title": "Interne Serviceanweisung SA-07: Priorisierung und Ablauf von Serviceeinsätzen",
+  "text": "- Das Serviceprotokoll ist innerhalb von 24 Stunden nach dem Einsatz im Partnerportal hochzuladen.\n- Pflichtfotos: Typenschild, Gesamtansicht des Außengeräts mit Umgebung, ausgetauschte Teile.\n- Wartungen müssen im Portal als \"Jahreswartung\" gekennzeichnet werden, sonst werden sie für die verlängerte Verdichtergarantie nicht gezählt.",
+  "page": null,
+  "heading": "7. Dokumentation"
+ },
+ {
+  "id": "serviceanweisung-sa07-de.docx#8",
+  "doc_id": "serviceanweisung-sa07-de.docx",
+  "title": "Interne Serviceanweisung SA-07: Priorisierung und Ablauf von Serviceeinsätzen",
+  "text": "Wenn ein P1-Fall nicht innerhalb der vorgesehenen Zeit bearbeitet werden kann, informiert der Disponent sofort die Teamleitung Service. Bei Beschwerden mit Hinweis auf rechtliche Schritte wird zusätzlich die Rechtsabteilung informiert; der Techniker gibt dazu keine Aussagen ab.\nFiktives Dokument, erstellt für eine Software-Demonstration. Die Hollvik Wärmetechnik GmbH und alle Inhalte dieses Dokuments sind erfunden.",
+  "page": null,
+  "heading": "8. Eskalation"
+ },
+ {
+  "id": "servicepreisliste-2026-de.pdf#0",
+  "doc_id": "servicepreisliste-2026-de.pdf",
+  "title": "Hollvik Servicepreisliste 2026",
+  "text": "Servicepreisliste SP-2026 HOLLVIK\nWärmetechnik | gültig vom 1. Januar bis 31. Dezember 2026\nServicepreisliste 2026 für Endkunden\nAlle Preise in Euro. Netto zuzüglich 19 % Mehrwertsteuer; der Bruttopreis ist in der rechten Spalte\nangegeben. Ersatzteile werden nach der jeweils gültigen Ersatzteilpreisliste berechnet.",
+  "page": 1,
+  "heading": null
+ },
+ {
+  "id": "servicepreisliste-2026-de.pdf#1",
+  "doc_id": "servicepreisliste-2026-de.pdf",
+  "title": "Hollvik Servicepreisliste 2026",
+  "text": "1. Wartung und Inbetriebnahme\nLeistung Netto Brutto\nJahreswartung LW 6 und LW 9 (inklusive Dichtheitsprüfung, bis 90 Minuten vor Ort) | 189,00 | 224,91\nJahreswartung LW 12 (inklusive Dichtheitsprüfung, bis 120 Minuten vor Ort) | 219,00 | 260,61\nInbetriebnahme durch den Hollvik-Werkskundendienst | 390,00 | 464,10\nHydraulischer Abgleich mit Berechnung und Protokoll (Einfamilienhaus) | 249,00 | 296,31\nSoftware-Update vor Ort (wenn das Gerät nicht online ist) | 59,00 | 70,21",
+  "page": 1,
+  "heading": "1. Wartung und Inbetriebnahme"
+ },
+ {
+  "id": "servicepreisliste-2026-de.pdf#2",
+  "doc_id": "servicepreisliste-2026-de.pdf",
+  "title": "Hollvik Servicepreisliste 2026",
+  "text": "2. Arbeitszeit und Anfahrt\nLeistung Netto Brutto\nArbeitsstunde Servicetechniker (Abrechnung je angefangene 15 Minuten) | 79,00 | 94,01\nAnfahrtspauschale Zone 1 (bis 25 km vom nächsten Servicestützpunkt) | 35,00 | 41,65\nAnfahrtspauschale Zone 2 (25 bis 50 km) | 55,00 | 65,45\nAnfahrt Zone 3 (über 50 km), je gefahrenem Kilometer | 0,95 | 1,13",
+  "page": 1,
+  "heading": "2. Arbeitszeit und Anfahrt"
+ },
+ {
+  "id": "servicepreisliste-2026-de.pdf#3",
+  "doc_id": "servicepreisliste-2026-de.pdf",
+  "title": "Hollvik Servicepreisliste 2026",
+  "text": "3. Zuschläge\nNotdienst an Werktagen zwischen 18:00 und 07:00 Uhr: 40 % auf Arbeitszeit und Anfahrt.\nNotdienst an Samstagen, Sonntagen und gesetzlichen Feiertagen: 60 % auf Arbeitszeit und Anfahrt.\nKein Zuschlag, wenn der Notdienst wegen eines Garantiefalls in den ersten 2 Jahren nötig ist.",
+  "page": 1,
+  "heading": "3. Zuschläge"
+ },
+ {
+  "id": "servicepreisliste-2026-de.pdf#4",
+  "doc_id": "servicepreisliste-2026-de.pdf",
+  "title": "Hollvik Servicepreisliste 2026",
+  "text": "4. Wartungsvertrag Hollvik Plus\nLeistung Netto Brutto\nHollvik Plus, monatlich (Mindestlaufzeit 24 Monate) | 16,00 | 19,04\nHollvik Plus enthält:\ndie Jahreswartung (für alle Modelle);\ndie Anfahrt in Zone 1 und Zone 2 bei allen Einsätzen;\n15 % Rabatt auf Ersatzteile;\nbei Heizungsausfall in der Heizperiode einen Techniker vor Ort innerhalb von 12 Stunden;\ndie Dokumentation der Wartung im Portal, damit die verlängerte Verdichtergarantie erhalten bleibt.\nKündigung nach der Mindestlaufzeit mit einer Frist von 3 Monaten zum Monatsende.",
+  "page": 1,
+  "heading": "4. Wartungsvertrag Hollvik Plus"
+ },
+ {
+  "id": "servicepreisliste-2026-de.pdf#5",
+  "doc_id": "servicepreisliste-2026-de.pdf",
+  "title": "Hollvik Servicepreisliste 2026",
+  "text": "5. Zahlung und Termine\nZahlung per Rechnung innerhalb von 14 Tagen ohne Abzug oder per SEPA-Lastschrift.\nWartungstermine können online unter www.hollvik.example/service oder über die Service-Hotline\ngebucht werden (Montag bis Freitag, 8:00 bis 17:00 Uhr).\nTermine, die weniger als 24 Stunden vorher abgesagt werden, können mit der Anfahrtspauschale\nberechnet werden.\nFiktives Dokument, erstellt für eine Software-Demonstration. Die Hollvik Wärmetechnik GmbH, ihre Leistungen und alle Preise in diesem\nDokument sind erfunden.",
+  "page": 2,
+  "heading": "5. Zahlung und Termine"
+ },
+ {
+  "id": "warranty-terms-en.pdf#0",
+  "doc_id": "warranty-terms-en.pdf",
+  "title": "Hollvik warranty terms for heat pumps",
+  "text": "Warranty terms GT-2026 HOLLVIK\nWärmetechnik | For units commissioned from 1 January 2026\nManufacturer's warranty for Hollvik heat pumps\nThis manufacturer's warranty is given in addition to the statutory rights of the buyer against the seller.\nThose statutory rights are not limited by this warranty.",
+  "page": 1,
+  "heading": null
+ },
+ {
+  "id": "warranty-terms-en.pdf#1",
+  "doc_id": "warranty-terms-en.pdf",
+  "title": "Hollvik warranty terms for heat pumps",
+  "text": "1. Scope and duration\nStandard warranty: 5 years on all parts of the heat pump and the HC-2 control unit, starting on the\ndate of commissioning.\nExtended compressor\nwarranty: 10 years on the compressor, if both conditions in section 2 are met.\nLabour costs: during the first 2 years Hollvik covers parts, labour and travel costs for warranty repairs.\nFrom the third year the warranty covers parts only; labour and travel are charged according to the\ncurrent service price list.\nIf the commissioning date cannot be proven, the warranty starts on the delivery date shown on the\ninvoice.",
+  "page": 1,
+  "heading": "1. Scope and duration"
+ },
+ {
+  "id": "warranty-terms-en.pdf#2",
+  "doc_id": "warranty-terms-en.pdf",
+  "title": "Hollvik warranty terms for heat pumps",
+  "text": "2. Conditions for the extended compressor warranty\n1. The unit is registered in the Hollvik partner portal or at www.hollvik.example/register within 60 days of\ncommissioning.\n2. The unit is serviced once a year by Hollvik service or a certified Hollvik partner, and each service is\ndocumented in the portal. A gap of up to 15 months between two services is accepted.",
+  "page": 1,
+  "heading": "2. Conditions for the extended compressor warranty"
+ },
+ {
+  "id": "warranty-terms-en.pdf#3",
+  "doc_id": "warranty-terms-en.pdf",
+  "title": "Hollvik warranty terms for heat pumps",
+  "text": "3. Exclusions\nThe warranty does not cover:\ndamage caused by installation that does not follow installation manual IA-LW-2026-02, for example\nmissing dirt filter, too small system water volume or incorrect electrical protection;\nfrost damage caused by a power failure when no frost protection valves or antifreeze were installed;\ncorrosion of the evaporator for units installed less than 500 m from the sea coast, unless the coastal\nprotection coating (option KS) was ordered;\nwear parts such as filter inserts, fuses and seals;\ndamage caused by water quality outside the limits given in the installation manual;\ncosmetic damage that does not affect the function, for example scratches on the casing.",
+  "page": 1,
+  "heading": "3. Exclusions"
+ },
+ {
+  "id": "warranty-terms-en.pdf#4",
+  "doc_id": "warranty-terms-en.pdf",
+  "title": "Hollvik warranty terms for heat pumps",
+  "text": "4. How to make a claim\n1. Contact your installer or Hollvik service (service@hollvik.example) and provide the serial number from\nthe type plate, the commissioning protocol and a description of the fault or the error code.\n2. Hollvik confirms receipt and decides on the next step within 2 working days.\n3. Replaced parts become the property of Hollvik. A warranty repair does not extend or restart the\nwarranty period. Replaced parts have a warranty for the remaining warranty period, but at least 12\nmonths.",
+  "page": 1,
+  "heading": "4. How to make a claim"
+ },
+ {
+  "id": "warranty-terms-en.pdf#5",
+  "doc_id": "warranty-terms-en.pdf",
+  "title": "Hollvik warranty terms for heat pumps",
+  "text": "5. Change of owner\nThe warranty stays with the unit when the building is sold. The new owner must update the registration\nwithin 30 days of the change of ownership. If the registration is not updated, the standard warranty\ncontinues, but the extended compressor warranty ends.",
+  "page": 2,
+  "heading": "5. Change of owner"
+ },
+ {
+  "id": "warranty-terms-en.pdf#6",
+  "doc_id": "warranty-terms-en.pdf",
+  "title": "Hollvik warranty terms for heat pumps",
+  "text": "6. Territory\nThis warranty applies to units installed in Germany, Austria and Luxembourg.\nFictional document created for a software demonstration. Hollvik Wärmetechnik GmbH, its products and all terms in this document are\ninvented and do not describe any real company, product or legal offer.",
+  "page": 2,
+  "heading": "6. Territory"
+ }
+]
