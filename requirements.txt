@@ -4,3 +4,7 @@ pypdf==7.1.1
 python-docx==1.2.0
 numpy==2.5.5
 httpx==0.28.1
+# Indirect dependencies, pinned to releases with known security fixes
+anyio==4.16.0
+certifi==2026.11.20
+idna==3.20
