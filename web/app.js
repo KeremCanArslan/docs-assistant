@@ -19,14 +19,13 @@
     statusBox.classList.toggle("error", isError);
   }
 
-  // Citation markers such as [2] or [1, 3] become links to the source cards below the answer.
+  // Citation markers such as [2], [1, 3] or [1][3] become links to the source cards below the answer.
+  const CITATION_RUN = /\[\d{1,2}(?:\s*,\s*\d{1,2})*\](?:\s*\[\d{1,2}(?:\s*,\s*\d{1,2})*\])*/g;
   function renderInline(text) {
-    return escapeHtml(text.replace(/\*\*(.+?)\*\*/g, "$1")).replace(/\[(\d{1,2}(?:\s*,\s*\d{1,2})*)\]/g, (_, group) =>
-      group
-        .split(",")
-        .map((n) => n.trim())
+    return escapeHtml(text.replace(/\*\*(.+?)\*\*/g, "$1")).replace(CITATION_RUN, (run) =>
+      [...new Set(run.match(/\d{1,2}/g))]
         .map((n) => `<a class="cite" href="#source-${n}" data-source="${n}" aria-label="Source ${n}">${n}</a>`)
-        .join("")
+        .join('<span class="cite-sep">,</span>')
     );
   }
 

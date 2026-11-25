@@ -6,6 +6,17 @@ The demo uses six documents of a fictional heat pump manufacturer, Hollvik Wärm
 
 **Live demo:** https://keremcanarslan.github.io/docs-assistant/ (free hosting: the first question after a quiet period can take up to a minute while the server wakes up)
 
+| Document | Language | Format | Pages | Tables |
+|---|---|---|---|---|
+| LW series technical datasheet | English | PDF | 3 | 6 |
+| Installation and commissioning manual | German | PDF | 3 | 2 |
+| Warranty terms | English | PDF | 2 | 0 |
+| Service price list 2026 | German | PDF | 2 | 3 |
+| Internal service guideline SA-07 | German | DOCX | – | 1 |
+| Customer FAQ | English | Markdown | – | 0 |
+
+Word and Markdown files have no fixed pages, so their passages are cited by section heading. The PDF and DOCX files are generated from `tools/document_sources/` by `tools/build_documents.py`.
+
 ## What it does
 
 - Reads PDF, DOCX, Markdown and HTML. PDF tables keep their rows, and every passage keeps its document title, section heading and page number.
@@ -18,7 +29,7 @@ The demo uses six documents of a fictional heat pump manufacturer, Hollvik Wärm
 ## How it works
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph Indexing["Indexing (once, python -m app.ingest)"]
         D[PDF / DOCX / MD / HTML] --> L[Loaders: text, headings, pages]
         L --> C[Chunks of about 900 characters]
