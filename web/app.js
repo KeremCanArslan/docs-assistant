@@ -141,7 +141,7 @@
       docList.innerHTML = documents
         .map((d) => {
           const kind = d.document.split(".").pop();
-          const pages = d.pages ? `, ${d.pages} p.` : "";
+          const pages = d.pages ? ` · ${d.pages} ${d.pages === 1 ? "page" : "pages"}` : "";
           return `<li><a href="${escapeHtml(documentUrl(d.url))}" target="_blank" rel="noopener">${escapeHtml(d.title)}</a><span class="kind">${escapeHtml(kind)}${pages}</span></li>`;
         })
         .join("");
