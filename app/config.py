@@ -44,7 +44,7 @@ class Settings:
     requests_per_minute: int = 6
     daily_limit: int = 300
     daily_limit_per_visitor: int = 20
-    trust_proxy: bool = False
+    client_ip_header: str = ""  # header with the visitor's address, set by the proxy in front of the app
     allowed_origins: tuple[str, ...] = field(default_factory=tuple)
 
     @classmethod
@@ -70,6 +70,6 @@ class Settings:
             requests_per_minute=_int("REQUESTS_PER_MINUTE", base.requests_per_minute),
             daily_limit=_int("DAILY_LIMIT", base.daily_limit),
             daily_limit_per_visitor=_int("DAILY_LIMIT_PER_VISITOR", base.daily_limit_per_visitor),
-            trust_proxy=os.environ.get("TRUST_PROXY", "").strip() in ("1", "true", "yes"),
+            client_ip_header=os.environ.get("CLIENT_IP_HEADER", "").strip().lower(),
             allowed_origins=_list("ALLOWED_ORIGINS", ""),
         )

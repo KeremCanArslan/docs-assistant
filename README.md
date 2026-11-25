@@ -113,7 +113,7 @@ All settings are environment variables; see `.env.example`.
 | `DAILY_LIMIT` | `300` | Questions for all visitors together per day (days in Europe/Berlin time) |
 | `MAX_QUESTION_CHARS` | `500` | Longer questions are rejected |
 | `ALLOWED_ORIGINS` | | Comma-separated origins allowed to call the API from a browser |
-| `TRUST_PROXY` | `0` | `1` behind a proxy that sets `X-Forwarded-For` |
+| `CLIENT_IP_HEADER` | | Behind a proxy, the header with the visitor's address, for example `cf-connecting-ip`; for `x-forwarded-for` the last entry is used, because earlier entries can be forged |
 
 The index stores the name of the embedding model it was built with, and the server refuses to start with a different one, so switching providers means running `python -m app.ingest` again.
 

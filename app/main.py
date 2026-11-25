@@ -77,11 +77,17 @@ def default_services() -> Services:
     return Services(settings, index, embedder, generator, limiter)
 
 
-def client_id(request: Request, trust_proxy: bool) -> str:
-    if trust_proxy:
-        forwarded = request.headers.get("x-forwarded-for", "")
-        if forwarded:
-            return forwarded.split(",")[0].strip()
+def client_id(request: Request, header: str) -> str:
+    """The visitor's address for the rate limits.
+
+    `header` names the header that the proxy in front of the app sets (CLIENT_IP_HEADER); without one, the
+    address of the connection is used. For X-Forwarded-For the last entry counts: the proxy appends it,
+    while earlier entries come from the client and can be forged.
+    """
+    if header:
+        entries = [entry.strip() for entry in request.headers.get(header, "").split(",") if entry.strip()]
+        if entries:
+            return entries[-1]
     return request.client.host if request.client else "unknown"
 
 
@@ -157,7 +163,7 @@ def create_app(services_factory=default_services) -> FastAPI:
             raise HTTPException(422, "The question is empty.")
         if len(question) > s.settings.max_question_chars:
             raise HTTPException(422, f"The question is longer than {s.settings.max_question_chars} characters.")
-        limit = s.limiter.check(client_id(request, s.settings.trust_proxy))
+        limit = s.limiter.check(client_id(request, s.settings.client_ip_header))
         if limit == "minute":
             raise HTTPException(429, "Too many questions in a minute. Please wait a moment.")
         if limit == "client-day":

@@ -3,9 +3,10 @@ import logging
 import pytest
 from conftest import ScriptedGenerator
 from fastapi.testclient import TestClient
+from starlette.requests import Request
 
 from app.config import Settings
-from app.main import Services, create_app
+from app.main import Services, client_id, create_app
 from app.providers import ProviderError
 from app.ratelimit import RateLimiter
 
@@ -87,3 +88,21 @@ def test_question_text_is_not_logged(client_factory, caplog):
         client.post("/api/ask", json={"question": secret_question})
     assert secret_question not in caplog.text
     assert "/api/ask" in caplog.text
+
+
+def request_with(headers: dict[str, str], host: str = "10.0.0.1") -> Request:
+    raw = [(name.lower().encode(), value.encode()) for name, value in headers.items()]
+    return Request({"type": "http", "headers": raw, "client": (host, 1234)})
+
+
+def test_client_address_comes_from_the_connection_unless_a_header_is_configured():
+    assert client_id(request_with({"X-Forwarded-For": "1.1.1.1"}), "") == "10.0.0.1"
+
+
+def test_forwarded_for_uses_the_entry_added_by_the_proxy_not_the_forgeable_first_one():
+    assert client_id(request_with({"X-Forwarded-For": "6.6.6.6, 2.2.2.2"}), "x-forwarded-for") == "2.2.2.2"
+
+
+def test_configured_single_value_header_is_used_and_missing_header_falls_back():
+    assert client_id(request_with({"CF-Connecting-IP": "3.3.3.3"}), "cf-connecting-ip") == "3.3.3.3"
+    assert client_id(request_with({}), "cf-connecting-ip") == "10.0.0.1"

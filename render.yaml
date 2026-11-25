@@ -28,7 +28,7 @@ services:
         value: 6
       - key: DAILY_LIMIT
         value: 150
-      - key: TRUST_PROXY
-        value: 1
+      - key: CLIENT_IP_HEADER
+        value: cf-connecting-ip
       - key: ALLOWED_ORIGINS
         value: https://keremcanarslan.github.io
