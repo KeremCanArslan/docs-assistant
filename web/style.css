@@ -72,6 +72,7 @@ button[type="submit"]:disabled { opacity: 0.55; cursor: progress; }
   font-size: 12px; font-weight: 700; vertical-align: super; line-height: 0; padding: 0 2px;
   color: var(--accent); text-decoration: none; cursor: pointer;
 }
+.cite + .cite::before { content: ","; padding-right: 1px; color: var(--muted); }
 
 .sources { list-style: none; padding: 0; margin: 18px 0 0; display: grid; gap: 10px; }
 .source { border: 1px solid var(--line); border-radius: 2px; padding: 10px 12px; background: var(--panel); }
