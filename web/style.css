@@ -34,6 +34,16 @@ a { color: inherit; text-underline-offset: 2px; }
 .brand { font-weight: 700; font-size: 20px; letter-spacing: 0.04em; }
 .brand span { color: var(--accent); }
 .tag { font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+.top-side { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+.langs { display: flex; gap: 4px; }
+.lang {
+  display: inline-flex; align-items: center; gap: 6px; padding: 4px 8px; cursor: pointer;
+  font: inherit; font-size: 12px; font-weight: 600; letter-spacing: 0.06em;
+  border: 1px solid var(--line); border-radius: 2px; background: var(--paper); color: var(--muted);
+}
+.lang:hover { border-color: var(--ink); color: var(--ink); }
+.lang[aria-pressed="true"] { border-color: var(--accent); color: var(--ink); }
+.lang svg { width: 18px; height: 12px; display: block; outline: 1px solid rgba(127, 127, 127, 0.35); }
 
 .layout { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 40px; padding-top: 28px; padding-bottom: 28px; }
 h1 { font-size: 28px; line-height: 1.2; margin: 0 0 8px; }
