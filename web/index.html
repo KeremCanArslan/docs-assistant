@@ -5,15 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Document assistant demo · Hollvik (fictional)</title>
   <meta name="description" content="Ask questions about a heat pump manufacturer's manuals, price list and warranty terms. Every answer cites the page it comes from.">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='3' fill='%23b5361d'/><text x='16' y='23' font-family='Helvetica,Arial,sans-serif' font-size='20' font-weight='700' text-anchor='middle' fill='%23fff'>H</text></svg>">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230A5C70'/><g fill='none' stroke='%23fff' stroke-width='2.2'><circle cx='16' cy='16' r='10'/><circle cx='16' cy='16' r='5.5'/></g><circle cx='16' cy='16' r='2' fill='%23fff'/></svg>">
+  <link rel="preload" href="fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/barlow-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="top">
     <div class="wrap top-row">
-      <div class="brand">HOLLVIK <span>Wärmetechnik</span></div>
+      <div class="brand">
+        <svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="6"/><circle class="mark-line" cx="16" cy="16" r="10"/><circle class="mark-line" cx="16" cy="16" r="5.5"/><circle class="mark-dot" cx="16" cy="16" r="2"/></svg>
+        <span class="brand-name">HOLLVIK</span>
+        <span class="brand-sub">Wärmetechnik</span>
+      </div>
       <div class="top-side">
-        <div class="tag" data-i18n="tag">Document assistant · demo</div>
+        <span class="tag" data-i18n="tag">Document assistant demo</span>
         <div class="langs" role="group" aria-label="Language / Sprache / Dil">
           <button type="button" class="lang" data-lang="en" lang="en" title="English" aria-pressed="true">
             <svg viewBox="0 0 60 30" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><clipPath id="uk-s"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="uk-t"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath><g clip-path="url(#uk-s)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#uk-t)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg>
@@ -32,46 +39,59 @@
     </div>
   </header>
 
-  <main class="wrap layout">
+  <main class="wrap page">
     <section class="ask" aria-labelledby="ask-title">
       <h1 id="ask-title" data-i18n="heading">Ask the service documents</h1>
-      <p class="lead intro" data-i18n="intro">A demo of an assistant that answers questions from a company's own documents, such as manuals, price lists and internal guidelines, and links every answer to the page it came from.</p>
+      <p class="intro" data-i18n="intro">A demo of an assistant that answers questions from a company's own documents, such as manuals, price lists and internal guidelines, and links every answer to the page it came from.</p>
       <p class="lead" data-i18n="lead">Here it reads six documents of a fictional heat pump maker: datasheet, installation manual, warranty terms, service price list, customer FAQ and an internal service guideline. Answers come only from these documents. Ask in English, German or Turkish.</p>
 
       <form id="form" autocomplete="off">
         <label for="question" class="visually-hidden" data-i18n="questionLabel">Your question</label>
-        <textarea id="question" name="question" rows="2" maxlength="500" placeholder="e.g. How loud is the LW 12 at night?" data-i18n-placeholder="placeholder" required></textarea>
-        <div class="form-row">
-          <span id="count" class="count">0 / 500</span>
-          <button type="submit" id="submit" data-i18n="ask">Ask</button>
+        <div class="field">
+          <textarea id="question" name="question" rows="2" maxlength="500" placeholder="e.g. How loud is the LW 12 at night?" data-i18n-placeholder="placeholder" required></textarea>
+          <div class="form-row">
+            <span id="count" class="count">0 / 500</span>
+            <button type="submit" id="submit" data-i18n="ask">Ask</button>
+          </div>
         </div>
       </form>
 
       <h2 id="examples-title" class="examples-title" data-i18n="examples">Try an example</h2>
       <div class="examples" aria-labelledby="examples-title">
-        <button type="button" class="example">How long is the compressor warranty and what do I need to do for it?</button>
-        <button type="button" class="example">Was bedeutet der Störungscode E12?</button>
-        <button type="button" class="example">LW 9'un yıllık bakımı ne kadar tutuyor?</button>
-        <button type="button" class="example">Can the LW 6 cool my house in summer?</button>
-        <button type="button" class="example">Who is the managing director of Hollvik?</button>
+        <button type="button" class="example" lang="en">How long is the compressor warranty and what do I need to do for it?</button>
+        <button type="button" class="example" lang="de">Was bedeutet der Störungscode E12?</button>
+        <button type="button" class="example" lang="tr">LW 9'un yıllık bakımı ne kadar tutuyor?</button>
+        <button type="button" class="example" lang="en">Can the LW 6 cool my house in summer?</button>
+        <button type="button" class="example" lang="en">Who is the managing director of Hollvik?</button>
       </div>
-
-      <div id="status" class="status" role="status" aria-live="polite"></div>
-      <article id="answer" class="answer" aria-live="polite" hidden></article>
-      <ol id="sources" class="sources" hidden></ol>
     </section>
 
     <aside class="docs" aria-labelledby="docs-title">
       <h2 id="docs-title" data-i18n="documents">Documents</h2>
       <ul id="documents" class="doc-list"><li class="muted" data-i18n="loading">Loading the list…</li></ul>
-      <h2 data-i18n="howTitle">How it works</h2>
-      <p data-i18n="how">The documents are split into passages and indexed once. For each question the most similar passages are found by meaning (so an English question also finds a German page), error codes are matched exactly, and the language model may answer only from those passages, with a citation after each fact. If the documents do not contain the answer, it says so.</p>
-      <p><a href="https://github.com/KeremCanArslan/docs-assistant" data-i18n="github">Source code, tests and evaluation on GitHub</a></p>
     </aside>
+
+    <div id="result" class="result">
+      <div class="answer-col">
+        <div id="status" class="status" role="status" aria-live="polite"></div>
+        <article id="answer" class="answer" aria-live="polite" hidden></article>
+      </div>
+      <ol id="sources" class="sources" hidden></ol>
+    </div>
+
+    <section class="how" aria-labelledby="how-title">
+      <h2 id="how-title" data-i18n="howTitle">How it works</h2>
+      <ol class="steps">
+        <li data-i18n="how1">The documents are split into passages and indexed once.</li>
+        <li data-i18n="how2">For each question the closest passages are found by meaning, so an English question also finds a German page. Error codes are matched exactly.</li>
+        <li data-i18n="how3">The language model answers only from those passages and cites the source after each fact. If the documents do not contain the answer, it says so.</li>
+      </ol>
+      <p class="github"><a href="https://github.com/KeremCanArslan/docs-assistant" data-i18n="github">Source code, tests and evaluation on GitHub</a></p>
+    </section>
   </main>
 
-  <footer class="wrap foot" data-i18n="footer">
-    Hollvik Wärmetechnik GmbH and all documents are fictional, created for this demo. Questions are sent to the language model providers (Groq, Google) to produce the answer and are not stored by this demo; please do not enter personal data. Free hosting: the first question after a quiet period can take up to a minute.
+  <footer class="foot">
+    <div class="wrap"><p data-i18n="footer">Hollvik Wärmetechnik GmbH and all documents are fictional, created for this demo. Questions are sent to the language model providers (Groq, Google) to produce the answer and are not stored by this demo; please do not enter personal data. Free hosting: the first question after a quiet period can take up to a minute.</p></div>
   </footer>
 
   <script src="config.js"></script>

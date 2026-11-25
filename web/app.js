@@ -9,13 +9,14 @@
   const statusBox = document.getElementById("status");
   const answerBox = document.getElementById("answer");
   const sourcesBox = document.getElementById("sources");
+  const resultBox = document.getElementById("result");
   const docList = document.getElementById("documents");
 
   // Page texts. The answers themselves follow the language of the question, not this setting.
   const STRINGS = {
     en: {
       title: "Document assistant demo · Hollvik (fictional)",
-      tag: "Document assistant · demo",
+      tag: "Document assistant demo",
       heading: "Ask the service documents",
       intro:
         "A demo of an assistant that answers questions from a company's own documents, such as manuals, price lists and internal guidelines, and links every answer to the page it came from.",
@@ -29,8 +30,9 @@
       loading: "Loading the list…",
       listAsleep: "The list loads when the server is awake.",
       howTitle: "How it works",
-      how:
-        "The documents are split into passages and indexed once. For each question the most similar passages are found by meaning (so an English question also finds a German page), error codes are matched exactly, and the language model may answer only from those passages, with a citation after each fact. If the documents do not contain the answer, it says so.",
+      how1: "The documents are split into passages and indexed once.",
+      how2: "For each question the closest passages are found by meaning, so an English question also finds a German page. Error codes are matched exactly.",
+      how3: "The language model answers only from those passages and cites the source after each fact. If the documents do not contain the answer, it says so.",
       github: "Source code, tests and evaluation on GitHub",
       footer:
         "Hollvik Wärmetechnik GmbH and all documents are fictional, created for this demo. Questions are sent to the language model providers (Groq, Google) to produce the answer and are not stored by this demo; please do not enter personal data. Free hosting: the first question after a quiet period can take up to a minute.",
@@ -44,6 +46,8 @@
       pages: "pages",
       pageShort: "p.",
       source: "Source",
+      openPage: "Open page",
+      openDoc: "Open document",
       errEmpty: "The question is empty.",
       errTooLarge: "The request is too large.",
       errMinute: "Too many questions in a minute. Please wait a moment.",
@@ -53,7 +57,7 @@
     },
     de: {
       title: "Demo Dokumentenassistent · Hollvik (fiktiv)",
-      tag: "Dokumentenassistent · Demo",
+      tag: "Dokumentenassistent (Demo)",
       heading: "Fragen Sie die Servicedokumente",
       intro:
         "Die Demo eines Assistenten, der Fragen aus den eigenen Dokumenten eines Unternehmens beantwortet, etwa aus Handbüchern, Preislisten und internen Richtlinien, und jede Antwort mit der Seite verknüpft, aus der sie stammt.",
@@ -67,8 +71,9 @@
       loading: "Liste wird geladen…",
       listAsleep: "Die Liste erscheint, sobald der Server wach ist.",
       howTitle: "So funktioniert es",
-      how:
-        "Die Dokumente werden einmal in Abschnitte zerlegt und indexiert. Zu jeder Frage werden die inhaltlich ähnlichsten Abschnitte gesucht (eine englische Frage findet also auch eine deutsche Seite), Fehlercodes werden exakt abgeglichen, und das Sprachmodell darf nur aus diesen Abschnitten antworten, mit einer Quellenangabe nach jeder Aussage. Steht die Antwort nicht in den Dokumenten, sagt es das.",
+      how1: "Die Dokumente werden einmal in Abschnitte zerlegt und indexiert.",
+      how2: "Zu jeder Frage werden die inhaltlich ähnlichsten Abschnitte gesucht, eine englische Frage findet also auch eine deutsche Seite. Fehlercodes werden exakt abgeglichen.",
+      how3: "Das Sprachmodell antwortet nur aus diesen Abschnitten und nennt nach jeder Aussage die Quelle. Steht die Antwort nicht in den Dokumenten, sagt es das.",
       github: "Quellcode, Tests und Auswertung auf GitHub",
       footer:
         "Die Hollvik Wärmetechnik GmbH und alle Dokumente sind fiktiv und nur für diese Demo erstellt. Fragen werden zur Beantwortung an die Sprachmodell-Anbieter (Groq, Google) gesendet und von dieser Demo nicht gespeichert; bitte geben Sie keine personenbezogenen Daten ein. Kostenloses Hosting: Die erste Frage nach einer Pause kann bis zu einer Minute dauern.",
@@ -82,6 +87,8 @@
       pages: "Seiten",
       pageShort: "S.",
       source: "Quelle",
+      openPage: "Seite öffnen",
+      openDoc: "Dokument öffnen",
       errEmpty: "Die Frage ist leer.",
       errTooLarge: "Die Anfrage ist zu groß.",
       errMinute: "Zu viele Fragen in einer Minute. Bitte warten Sie einen Moment.",
@@ -91,7 +98,7 @@
     },
     tr: {
       title: "Belge asistanı demosu · Hollvik (uydurma)",
-      tag: "Belge asistanı · demo",
+      tag: "Belge asistanı demosu",
       heading: "Servis belgelerine sorun",
       intro:
         "Bir firmanın kendi belgelerinden (kılavuzlar, fiyat listeleri, iç yönergeler) soruları cevaplayan ve her cevabı alındığı sayfaya bağlayan bir asistanın demosu.",
@@ -105,8 +112,9 @@
       loading: "Liste yükleniyor…",
       listAsleep: "Liste, sunucu uyanınca yüklenir.",
       howTitle: "Nasıl çalışır",
-      how:
-        "Belgeler bir kez parçalara bölünüp dizinlenir. Her soru için anlamca en yakın parçalar bulunur (İngilizce bir soru Almanca bir sayfayı da bulur), hata kodları birebir eşleştirilir ve dil modeli yalnız bu parçalardan, her bilginin arkasına kaynak numarası koyarak cevap verebilir. Cevap belgelerde yoksa bunu söyler.",
+      how1: "Belgeler bir kez parçalara bölünüp dizinlenir.",
+      how2: "Her soru için anlamca en yakın parçalar bulunur; İngilizce bir soru Almanca bir sayfayı da bulur. Hata kodları birebir eşleştirilir.",
+      how3: "Dil modeli yalnız bu parçalardan cevap verir ve her bilginin arkasına kaynağını yazar. Cevap belgelerde yoksa bunu söyler.",
       github: "Kaynak kod, testler ve ölçüm sonuçları GitHub'da",
       footer:
         "Hollvik Wärmetechnik GmbH ve bütün belgeler uydurmadır, bu demo için hazırlandı. Sorular cevap üretmek için dil modeli sağlayıcılarına (Groq, Google) gönderilir ve bu demo tarafından saklanmaz; lütfen kişisel bilgi girmeyin. Ücretsiz sunucu: bir süre soru gelmezse ilk soru bir dakikaya kadar sürebilir.",
@@ -120,6 +128,8 @@
       pages: "sayfa",
       pageShort: "s.",
       source: "Kaynak",
+      openPage: "Sayfayı aç",
+      openDoc: "Belgeyi aç",
       errEmpty: "Soru boş.",
       errTooLarge: "İstek çok büyük.",
       errMinute: "Bir dakikada çok fazla soru soruldu. Lütfen biraz bekleyin.",
@@ -166,17 +176,24 @@
   function renderStatus() {
     statusBox.textContent = status ? (status.key ? t(status.key) : status.text) : "";
     statusBox.classList.toggle("error", Boolean(status && status.isError));
+    statusBox.classList.toggle("busy", Boolean(status && status.busy));
   }
 
-  // Citation markers such as [2], [1, 3] or [1][3] become links to the source cards below the answer.
+  // Citation markers such as [2], [1, 3] or [1][3] become tabs that point to the source pages next to the answer.
   const CITATION_RUN = /\[\d{1,2}(?:\s*,\s*\d{1,2})*\](?:\s*\[\d{1,2}(?:\s*,\s*\d{1,2})*\])*/g;
   function renderInline(text) {
     return escapeHtml(text.replace(/\*\*(.+?)\*\*/g, "$1")).replace(CITATION_RUN, (run) =>
       [...new Set(run.match(/\d{1,2}/g))]
         .map((n) => `<a class="cite" href="#source-${n}" data-source="${n}" aria-label="${t("source")} ${n}">${n}</a>`)
-        .join('<span class="cite-sep">,</span>')
+        .join("")
     );
   }
+
+  // PDF text keeps the line breaks of the printed page; a line that continues a sentence is joined to the one before.
+  const reflow = (text) => text.replace(/,\n/g, ", ").replace(/([^\n])\n(?=[a-zäöüßçğış])/g, "$1 ");
+
+  const EXTERNAL_ICON =
+    '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M5 2.5H2.5v7h7V7M7 2.5h2.5V5M9.5 2.5 5.5 6.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 
   function renderAnswer(text) {
     const html = [];
@@ -201,32 +218,42 @@
     return url.startsWith("http") ? url : API + url;
   }
 
-  function showAnswer(body) {
+  const fileKind = (name) => name.split(".").pop().toUpperCase();
+
+  // animate is false when the same answer is only redrawn in another page language.
+  function showAnswer(body, animate = true) {
     answerBox.className = body.found ? "answer" : "answer not-found";
     const seconds = ((body.retrieval_ms + body.generation_ms) / 1000).toFixed(1);
     const label = body.found ? "" : `<div class="label">${escapeHtml(t("notFound"))}</div>`;
     const hint = body.found ? "" : `<p class="hint">${escapeHtml(t("hint"))}</p>`;
-    answerBox.innerHTML = `${label}${renderAnswer(body.answer)}${hint}<div class="meta">${seconds} s · ${escapeHtml(body.model)}</div>`;
+    answerBox.innerHTML = `${label}${renderAnswer(body.answer)}${hint}<div class="meta"><span>${seconds} s</span><span>${escapeHtml(body.model)}</span></div>`;
     answerBox.hidden = false;
-    showSources(body.found ? body.citations : []);
+    showSources(body.found ? body.citations : [], animate);
   }
 
-  function showSources(citations) {
+  function showSources(citations, animate) {
     const active = sourcesBox.querySelector(".active")?.id;
     sourcesBox.innerHTML = citations
-      .map((c) => {
-        const where = c.page ? `${t("pageShort")} ${c.page}` : c.location || c.document;
-        return `<li class="source" id="source-${c.number}">
+      .map((c, i) => {
+        const where = c.page ? `${t("pageShort")} ${c.page}` : c.location;
+        return `<li class="source" id="source-${c.number}" style="--i: ${i}">
+          <span class="source-tab" aria-hidden="true">${c.number}</span>
           <div class="source-head">
-            <div><span class="source-num">${c.number}</span><span class="source-title">${escapeHtml(c.title)}</span></div>
-            <a class="source-where" href="${escapeHtml(documentUrl(c.url))}" target="_blank" rel="noopener">${escapeHtml(where)} ↗</a>
+            <span class="source-title"><span class="visually-hidden">${escapeHtml(t("source"))} ${c.number}: </span>${escapeHtml(c.title)}</span>
+            <span class="source-kind">${escapeHtml(fileKind(c.document))}</span>
           </div>
-          <pre>${escapeHtml(c.excerpt)}</pre>
+          <p class="excerpt"><span>${escapeHtml(reflow(c.excerpt))}</span></p>
+          <div class="source-foot">
+            <span>${escapeHtml(where || "")}</span>
+            <a href="${escapeHtml(documentUrl(c.url))}" target="_blank" rel="noopener">${escapeHtml(t(c.page ? "openPage" : "openDoc"))}${EXTERNAL_ICON}</a>
+          </div>
         </li>`;
       })
       .join("");
     if (active) document.getElementById(active)?.classList.add("active");
+    sourcesBox.classList.toggle("dealt", animate);
     sourcesBox.hidden = citations.length === 0;
+    resultBox.classList.toggle("has-sources", citations.length > 0);
   }
 
   function showDocuments() {
@@ -236,9 +263,8 @@
     }
     docList.innerHTML = documents
       .map((d) => {
-        const kind = d.document.split(".").pop();
-        const pages = d.pages ? ` · ${d.pages} ${t(d.pages === 1 ? "page" : "pages")}` : "";
-        return `<li><a href="${escapeHtml(documentUrl(d.url))}" target="_blank" rel="noopener">${escapeHtml(d.title)}</a><span class="kind">${escapeHtml(kind)}${pages}</span></li>`;
+        const pages = d.pages ? `<span class="doc-meta">${d.pages} ${escapeHtml(t(d.pages === 1 ? "page" : "pages"))}</span>` : "";
+        return `<li><span class="file" aria-hidden="true">${escapeHtml(fileKind(d.document))}</span><div><a class="doc-title" href="${escapeHtml(documentUrl(d.url))}" target="_blank" rel="noopener">${escapeHtml(d.title)}</a>${pages}</div></li>`;
       })
       .join("");
   }
@@ -252,7 +278,7 @@
     document.querySelectorAll(".lang").forEach((button) => button.setAttribute("aria-pressed", String(button.dataset.lang === lang)));
     renderStatus();
     showDocuments();
-    if (lastAnswer) showAnswer(lastAnswer);
+    if (lastAnswer) showAnswer(lastAnswer, false);
   }
 
   document.querySelectorAll(".lang").forEach((button) =>
@@ -266,7 +292,7 @@
     })
   );
 
-  sourcesBox.parentElement.addEventListener("click", (event) => {
+  resultBox.addEventListener("click", (event) => {
     const link = event.target.closest(".cite");
     if (!link) return;
     event.preventDefault();
@@ -282,9 +308,10 @@
     answerBox.hidden = true;
     sourcesBox.hidden = true;
     sourcesBox.innerHTML = "";
+    resultBox.classList.remove("has-sources");
     lastAnswer = null;
-    setStatus({ key: "searching" });
-    const slow = setTimeout(() => setStatus({ key: "waking" }), 5000);
+    setStatus({ key: "searching", busy: true });
+    const slow = setTimeout(() => setStatus({ key: "waking", busy: true }), 5000);
     try {
       const response = await fetch(`${API}/api/ask`, {
         method: "POST",
