@@ -103,7 +103,10 @@
       answerBox.className = body.found ? "answer" : "answer not-found";
       const seconds = ((body.retrieval_ms + body.generation_ms) / 1000).toFixed(1);
       const label = body.found ? "" : '<div class="label">Not found in the documents</div>';
-      answerBox.innerHTML = `${label}${renderAnswer(body.answer)}<div class="meta">${seconds} s · ${escapeHtml(body.model)}</div>`;
+      const hint = body.found
+        ? ""
+        : '<p class="hint">Ask about warranty, prices, error codes, installation or maintenance, or click one of the example questions above.</p>';
+      answerBox.innerHTML = `${label}${renderAnswer(body.answer)}${hint}<div class="meta">${seconds} s · ${escapeHtml(body.model)}</div>`;
       answerBox.hidden = false;
       showSources(body.found ? body.citations : []);
     } catch (error) {
